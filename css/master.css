@@ -21,7 +21,7 @@
 
 
 .container{
-    max-width: 90vw;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -41,25 +41,34 @@ header p{
 }
 
 .cardContainer{
-    margin-top: 4rem;
+    margin: 2rem 0;
 }
 
 .card{
-    width: 400px;
+    width: calc((100%/3) - 2rem);
+    height: 150px;
     background-color: var(--bg-card);
     color: white;
     box-shadow: 0 0 20px 1px #A1A1A1;
+    float: left;
+    margin: 0 1rem;
+   
 }
 
 .card img {
     width: 150px;
     float: left;
     margin-right: 1rem;
-   
+}
+
+.textContainer{
+    height: 100%;
+    padding: 1.5rem 0;
 }
 
 div .card p{
     text-align: left;
+    font-size: 1rem;
 }
 
 div .card p:first-of-type{
