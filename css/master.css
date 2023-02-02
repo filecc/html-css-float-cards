@@ -13,6 +13,13 @@
 --role: #DFE7EA;
 }
 
+.clearfix::after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+
 .container{
     max-width: 90vw;
     margin: 0 auto;
@@ -29,6 +36,39 @@ h1, p{
     text-align: center;
 }
 
-p{
+header p{
     margin-top: 5rem;
+}
+
+.cardContainer{
+    margin-top: 4rem;
+}
+
+.card{
+    width: 400px;
+    background-color: var(--bg-card);
+    color: white;
+    box-shadow: 0 0 20px 1px #A1A1A1;
+}
+
+.card img {
+    width: 150px;
+    float: left;
+    margin-right: 1rem;
+   
+}
+
+div .card p{
+    text-align: left;
+}
+
+div .card p:first-of-type{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+div .card p:last-of-type{
+    color: var(--email);
+    margin-top: .5rem;
 }
